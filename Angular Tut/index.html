@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en" ng-app="angularExample">
+  <head>
+    
+    <title>
+      AngularJS - sample calculator
+    </title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap includes !-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://getbootstrap.com/examples/sticky-footer-navbar/sticky-footer-navbar.css">
+    
+    <!-- Angular Js includes !-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.js"></script>
+
+    <!-- local includes !-->
+    <script src="js/app.js"></script>
+
+  </head>
+  <body ng-controller="calcCtrl">
+    <h1> Angular JS : sample calculator</h1>
+    <div>
+        <input type="text" ng-model="inp1"/><br>
+        <input type="text" ng-model="inp2"/><br>
+        {{ inp1 * inp2 | currency }}<br><br>
+        <!--<input type="submit" ng-click="calc()" class="btn btn-primary"> -->
+    </div>
+  </body>
+</html>
